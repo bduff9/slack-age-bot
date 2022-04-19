@@ -48,7 +48,7 @@ func main() {
 			}
 			currentYear := time.Now().Year()
 			age := currentYear - yob
-			r := fmt.Sprintf("age is %d", age)
+			r := fmt.Sprintf("age is %d or %d", age-1, age)
 			response.Reply(r)
 		},
 	})
